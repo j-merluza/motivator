@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/me.py
+src/MotivateMe.egg-info/PKG-INFO
+src/MotivateMe.egg-info/SOURCES.txt
+src/MotivateMe.egg-info/dependency_links.txt
+src/MotivateMe.egg-info/top_level.txt
