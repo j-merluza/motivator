@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+MotivateMe.egg-info/PKG-INFO
+MotivateMe.egg-info/SOURCES.txt
+MotivateMe.egg-info/dependency_links.txt
+MotivateMe.egg-info/top_level.txt
+motivate/__init__.py
+motivate/me.py
+motivate/quotes.json
