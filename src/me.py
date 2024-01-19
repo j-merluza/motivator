@@ -12,7 +12,7 @@ class MotivateMe:
         category: Category of said fire quote.
     """
     def __init__(self):
-        with open("quotes.json", "r") as json_file:
+        with open(".\quotes.json", "r") as json_file:
             self.data = json.load(json_file)
         self.quote = random.choice(list(self.data))
         self.author = self.data.get(self.quote)[0]
