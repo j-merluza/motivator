@@ -1,5 +1,6 @@
 import json
 import random
+import os
 
 
 class MotivateMe:
@@ -12,7 +13,12 @@ class MotivateMe:
         category: Category of said fire quote.
     """
     def __init__(self):
-        with open(r".\quotes.json", "r") as json_file:
+
+        __location__ = os.path.realpath(
+            os.path.join(os.getcwd(), os.path.dirname(__file__))
+        )
+
+        with open(os.path.join(__location__, "quotes.json")) as json_file:
             self.data = json.load(json_file)
         self.quote = random.choice(list(self.data))
         self.author = self.data.get(self.quote)[0]
