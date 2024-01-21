@@ -20,6 +20,7 @@ class MotivateMe:
 
         with open(os.path.join(__location__, "quotes.json")) as json_file:
             self.data = json.load(json_file)
+            
         self.quote = random.choice(list(self.data))
         self.author = self.data.get(self.quote)[0]
-        self.category = self.data.get(self.quote)[1].replace("\n", "")
+        # self.category = self.data.get(self.quote)[1].replace("\n", "")
