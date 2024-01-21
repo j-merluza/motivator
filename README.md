@@ -35,5 +35,7 @@ motivateme = MotivateMe()
 ```python
 quote = motivateme.quote
 author = motivateme.author
-category = motvateme.category
+
+print(f"{quote} - {author}")
+
 ```
